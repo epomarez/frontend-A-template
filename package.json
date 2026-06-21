@@ -1,0 +1,41 @@
+{
+  "name": "frontend-a-template",
+  "version": "1.0.0",
+  "description": "The purpose of this is to be a basic template for future frontend projects",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "pretty": "prettier . --write && eslint .",
+    "dev": "webpack serve --config webpack.dev.js",
+    "build": "webpack --config webpack.prod.js",
+    "deploy": "git subtree push --prefix dist origin gh-pages"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/epomarez/frontend-A-template.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/epomarez/frontend-A-template/issues"
+  },
+  "homepage": "https://github.com/epomarez/frontend-A-template#readme",
+  "devDependencies": {
+    "@eslint/css": "^1.3.0",
+    "@eslint/js": "^10.0.1",
+    "@eslint/json": "^2.0.0",
+    "css-loader": "^7.1.4",
+    "eslint": "^10.5.0",
+    "globals": "^17.6.0",
+    "html-loader": "^5.1.0",
+    "html-webpack-plugin": "^5.6.7",
+    "prettier": "3.8.4",
+    "style-loader": "^4.0.0",
+    "webpack": "^5.107.2",
+    "webpack-cli": "^7.0.3",
+    "webpack-dev-server": "^5.2.5",
+    "webpack-merge": "^6.0.1"
+  }
+}
